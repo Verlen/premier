@@ -137,3 +137,127 @@ padding-bottom: 40px;
   
  
 }   
+
+
+.BACK_TO_TOP {
+background-image: url(../images/backtotop.png); 
+background-repeat: no-repeat;
+height: 67px;
+width: 137px;
+margin: 12% 0% 0% 40%;
+
+}
+
+.lignes {
+  font-size: 22px;
+  font-family: "GentiumBasic";
+  color: rgb( 191, 191, 191 );
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.091;
+  text-align: left;
+  opacity: 0.49;
+  position: absolute;
+}
+
+._1_ {
+  left: 318px;
+  top: 830px;
+  width: 13px;
+  height: 13px;
+  margin: 12% 0% 0% 40%;
+  z-index: 48;
+}
+
+
+.buttom {
+font-size: 21px;
+color: rgb( 46, 204, 113 );
+text-align: center;
+border-style: solid;
+border-width: 2px;
+border-color: rgb( 46, 204, 113 );
+width: 270px;
+height: 20px;
+margin: 100px 585px;
+padding: 20px 2px;
+border-radius: 46px;
+position: absolute;
+}
+.footer {
+  background-image: url(../images/footer.png);
+  width: 1440px;
+  height: 613px;
+  margin: 0 auto; 
+}
+
+.footertext-1 .next {
+font-family: "Times New Roman";
+font-size: 15px;
+font-weight: bolder;
+color: white;
+width: 247px;
+height: 16pt;
+top: 334px;
+left: 70px;
+position: relative;
+}
+
+.footertext-1 .next-2 {
+font-family: "Times New Roman";
+font-size: 15px;
+font-weight: bolder;
+color: white;
+width: 247px;
+height: 16pt;
+top: 234px;
+left: 789px;
+position: relative;
+}
+.seside {
+font-family: "Times New Roman";
+font-size: 33px;
+color: #ffffff;
+width: 350px;
+height: 28pt;
+top: 370px;
+left: 70px;
+position: relative;
+}
+
+.seside-2 {
+font-size: 27px;
+font-style: italic;
+font-stretch: normal;
+color: #d7d7d7;
+width: 432px;
+height: 28pt;
+line-height: 1.6;
+top: 368px;
+left: 70px;
+position: relative;
+}
+
+.roma {
+font-family: "Times New Roman";
+font-size: 33px;
+color: #ffffff;
+width: 350px;
+height: 28pt;
+top: 270px;
+left: 789px;
+position: relative;
+}
+
+.roma-2 {
+font-size: 27px;
+font-style: italic;
+font-stretch: normal;
+color: #d7d7d7;
+width: 432px;
+height: 28pt;
+line-height: 1.6;
+top: 267px;
+left: 789px;
+position: relative;
+}

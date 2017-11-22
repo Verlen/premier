@@ -1,38 +1,38 @@
 @import "./reset.css";
 
 * {
-  padding: 0;
-  margin: 0;
+padding: 0;
+margin: 0;
 }
 
 .header {
   width: 1440px;
   height: 770px;
-  margin: 0 auto;
-  margin-top: 0;
-}
-
-.header__background {
   background-image: url(../images/Photo.png);
-  position: absolute;
-  width: 1440px;
-  height: 770px;
-  z-index: 25;
-  margin: 0 auto; 
+  background-size: cover;
+  margin: 0 auto;
 }
 
 .header_description_1 {
   font-size: 60px;
-  font-family: "Times New Roman";
+  font-family: 'Gentium Book Basic', arial;
   color: rgb( 255, 255, 255 );
   line-height: 0.4;
   text-align: left;
-  position: absolute;
+  position: relative;
   left: 370px;
   top: 565px;
-  z-index: 27;
 }
- 
+
+  /*
+    цвета записывай в hex (#ffffff) а не rgb(255, 255, 255) а заодно почитай про rgba(0,0,0, 0.5)
+
+    @@ Ставлю чветовую модель #ffffff и крашится, сьезжает в низ текст и становится тупо черным/ C Позиционирование Абсолют
+    Тоже беда, После того как его удаляю  немогу задать блоку другое позиционирование, задаю разные числа но он остается на том же месте@@
+    */
+   /*
+    огорчу тебя... там не Times New Roman. GentiumBookBasic - настоящее название.
+  */  
 .header_description_2 {
   font-size: 29px;
   font-family: "Times New Roman";
@@ -40,19 +40,22 @@
   color: rgb( 215, 215, 215 );
   line-height: 0.8;
   text-align: left;
-  position: absolute;
+  /*
+    в проекте не не должно быть абсолютов
+  */
+  position: relative;
   left: 371px;
-  top: 622px;
+  top: 590px;
   width: 370px;
   height: 21px;
   z-index: 28;
 }
 
-.hr {
+hr {
   background-color: rgb( 215, 215, 215 );
-  position: absolute;
+  position: relative;
   left: 370px;
-  top: 663px;
+  top: 610px;
   width: 701px;
   height: 0px;
   z-index: 29;
@@ -62,25 +65,24 @@
   font-size: 13px;
   font-family: "Times New Roman";
   color: #d7d7d7;
-  line-height: 1.667;
+
   text-align: left;
-  position: absolute;
+  position: relative;
   left: 373px;
-  top: 681px;
-  width: 195px;
+  top: 625px;
+  width: 229px;
   height: 29px;
   z-index: 30;
 }
-
-.header_  description_4 {
+.header_description_4 {
   font-size: 14px;
   letter-spacing: 1px;
   font-family: "Times New Roman";
   color: #FFFFFF;
-  line-height: 3.667;
+ 
   text-align: left;
-  position: absolute;
-  top: 5px;
+  position: relative;
+  top: 8px;
   width: 340px;
   height: 24px;
   z-index: 30;
@@ -88,58 +90,160 @@
 
 .header_description_avtor {
   background-image: url(../images/avtor.png);
-  position: absolute;
-  left: 583px;
-  top: 695px;
-  width: 28px;
+  position: relative;
+  left: 605px;
+  top: 600px;
+  width: 30px;
   height: 28px;
   border-radius: 50%;
-  padding: 0 0 0 0;
+  padding: 5px 5px 5px 5px;
   z-index: 33;
 }
 
- .content {
-  width: 1440px; 
-  height: 1626px;
+/*
+    форматирование кода. точно так же как и в html
+*/
+.content {
+  width: 1440px;
   background-color: #ffffff;
   margin: 0 auto;
 }
 
+.tag_lines {
+  font-size: 10pt;
+  color: #bfbfbf;
+  width: 40px;
+  height: 15px;
+  top: 50px;
+  left: 300px;
+  position: relative;
+}
 .content-text {
   text-align: left;
   font-size: 22px;
   font-family: "Times New Roman";
   color: #191919;
-  line-height: 1.818;
+  line-height: 1.818em;
   left: 00px;
   top: 00px;
   width: 701px;
-  height: 1421px;
   margin: 0 auto;
   padding-top: 57px;
+
 }
 
-.abz-2 {
-  padding-bottom: 40px;
+.content_text_bock_number_1 {
+  font-size: 20pt;
+  color: #bfbfbf;
+  width: 25px;
+  height: 15px;
+  top: 12px;
+  right: 50px;
+  position: relative;
+}
+
+.content_text_bock_number_5 {
+  font-size: 20pt;
+  color: #bfbfbf;
+  width: 25px;
+  height: 15px;
+  top: 12px;
+  right: 50px;
+  position: relative;
+}
+.content_text_bock_number_10 {
+  font-size: 20pt;
+  color: #bfbfbf;
+  width: 25px;
+  height: 15px;
+  top: 12px;
+  right: 50px;
+  position: relative;
+}
+
+.content_text_bock_number_15 {
+  font-size: 20pt;
+  color: #bfbfbf;
+  width: 25px;
+  height: 15px;
+  top: 13px;
+  right: 50px;
+  position: relative;
+}
+
+.content_text_bock_number_20 {
+  font-size: 20pt;
+  color: #bfbfbf;
+  width: 25px;
+  height: 15px;
+  top: 55px;
+  right: 50px;
+  position: relative;
+}
+
+.content_text_bock_number_25 {
+  font-size: 20pt;
+  color: #bfbfbf;
+  width: 25px;
+  height: 15px;
+  top: 55px;
+  right: 50px;
+  position: relative;
+}
+
+.content_text_bock_number_30 {
+  font-size: 20pt;
+  color: #bfbfbf;
+  width: 25px;
+  height: 15px;
+  top: 55px;
+  right: 50px;
+  position: relative;
+}
+
+/*
+    названия тегв. Ну это, ты понял.
+*/
+.content_text_center {
+padding-bottom: 40px;
+
 }
 
 .this {
   font-size: 30px;
-  width: 510px; 
+  width: 510px;
   text-align: center;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 40px 100px 40px 100px;
   color:#626262;
-}   
 
-.button_back_to_top {
-  background-image: url(../images/backtotop.png); 
-  background-repeat: no-repeat;
-  height: 67px;
-  width: 137px;
-  margin: 12% 0% 0% 40%;
+
 }
 
+/*
+    font-awesone
+
+    Ховерочек хочется, аж до слез хочется)))
+
+    и читай про псевдо-элементы :before и :after
+    и сделай тут before и без картинок
+    http://htmlbook.ru/css/before
+    http://htmlbook.ru/css/after
+*/
+
+.button_back_to_top {
+background-image: url(../images/backtotop.png);
+background-repeat: no-repeat;
+height: 67px;
+width: 137px;
+margin: 12% 0% 0% 40%;
+
+}
+
+/*
+    потуги должны увенчаться успехом ))
+    цыферки хочу.
+*/
 .lignes {
   font-size: 22px;
   font-family: "GentiumBasic";
@@ -152,15 +256,17 @@
   position: absolute;
 }
 
-._1_ {
-  left: 318px;
-  top: 830px;
-  width: 13px;
-  height: 13px;
-  margin: 12% 0% 0% 40%;
-  z-index: 48;
-}
 
+/*
+   ховерочки и еще что б плавно цыет меняла)) 
+*/
+.pre_footer {
+  height: 247px;
+  width: 1439px;
+  background-image: url(../images/Footer_back.png);
+  top: 0;
+ 
+}
 .button_share_this_artikle {
   font-size: 21px;
   color: rgb( 46, 204, 113 );
@@ -170,86 +276,112 @@
   border-color: rgb( 46, 204, 113 );
   width: 270px;
   height: 20px;
-  margin: 235px 585px;
+  display: inline-block;
   padding: 20px 2px;
   border-radius: 46px;
+  margin: 6% 0 0 39%;
 }
+
+.button_share_this_artikle:hover {
+  color: red;
+  border-color: red;
+}
+/*
+    (|) - Жопа
+    делим на блоки, внизу 2 ссылочки (картинки) по ховеру, хочу что б картинка становилась светлее и что б работало плавненько. Подсказка - rgba() цвет
+*/
 
 .footer {
-  background-image: url(../images/footer.png);
   width: 1440px;
   height: 613px;
-  margin: 0 auto; 
+  margin: 0 auto;
+}
+/*
+.footre_background {
+  height: 360px;
+  width: 1440px;
+  top: 10px;
+  left: 10px;
+  
+}
+*/
+.footer_left_block {
+  height: 361px;
+  width: 720px;
+  background-image: url(../images/footer_left_block.png);
+  bottom: 269px;
+  left: 0px;
+  float: left;
 }
 
-.footertext-1 .footer_text_left_block_next {
+.footer__text__left_block__next {
+  text-align: left;
+  padding: 10% 0 0 10%;
   font-family: "Times New Roman";
   font-size: 15px;
   font-weight: bolder;
   color: white;
-  width: 247px;
-  height: 16pt;
-  top: 334px;
-  left: 70px;
-  position: relative;
 }
 
-.footertext-1 .footer_text_right_block_next_2 {
-  font-family: "Times New Roman";
-  font-size: 15px;
-  font-weight: bolder;
-  color: white;
-  width: 247px;
-  height: 16pt;
-  top: 234px;
-  left: 789px;
-  position: relative;
-}
-
-.footer_text_left_block_seside {
+.footer__text_left__block__seside {
+  text-align: left;
+  padding: 7% 0 0 10%;
   font-family: "Times New Roman";
   font-size: 33px;
   color: #ffffff;
-  width: 350px;
-  height: 28pt;
-  top: 370px;
-  left: 70px;
-  position: relative;
 }
 
-.footer_text_left_block_seside_2 {
+.footer__text__left__block__seside__2 {
+  text-align: left;
+  padding: 2% 0 0 10%;
   font-size: 27px;
   font-style: italic;
   font-stretch: normal;
   color: #d7d7d7;
-  width: 432px;
-  height: 28pt;
-  line-height: 1.6;
-  top: 368px;
-  left: 70px;
-  position: relative;
+}
+
+
+.footer_right_block {
+  height: 361px;
+  width: 720px;
+  background-image: url(../images/footer_right_block.png);
+  bottom: 630px;
+  left: 269px;
+  float: right
+}
+
+.footer_text_right_block_next_2 {
+  text-align: left;
+  padding: 10% 0 0 10%;
+  font-family: "Times New Roman";
+  font-size: 15px;
+  font-weight: bolder;
+  color: white;
 }
 
 .footer_text_right_block_roma {
+  text-align: left;
+  padding: 7% 0 0 10%;
   font-family: "Times New Roman";
   font-size: 33px;
   color: #ffffff;
-  width: 350px;
-  height: 28pt;
-  top: 270px;
-  left: 789px;
-  position: relative;
 }
 
 .footer_text_right_block_roma_2 {
+  text-align: left;
+  padding: 2% 0 0 10%;
   font-size: 27px;
   font-style: italic;
   font-stretch: normal;
   color: #d7d7d7;
-  width: 432px;
-  height: 28pt;
-  line-height: 1.6;
-  top: 267px;
-  left: 789px;
   position: relative;
 }
+
+
+
+
+
+
+
+
+

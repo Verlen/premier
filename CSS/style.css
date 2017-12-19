@@ -1,4 +1,5 @@
 @import "./reset.css";
+@import "./fontello.css";
 
 * {
 padding: 0;
@@ -23,6 +24,8 @@ margin: 0;
   left: 370px;
   top: 565px;
 }
+
+
 
   /*
     цвета записывай в hex (#ffffff) а не rgb(255, 255, 255) а заодно почитай про rgba(0,0,0, 0.5)
@@ -74,6 +77,17 @@ hr {
   height: 29px;
   z-index: 30;
 }
+
+.icon-export{
+  display: inline-block;
+}
+
+.ikons {
+  float: left;
+  color: white;
+  padding: 43% 0% 0% 67%;
+}
+
 .header_description_4 {
   font-size: 14px;
   letter-spacing: 1px;
@@ -232,14 +246,17 @@ padding-bottom: 40px;
 */
 
 .button_back_to_top {
-background-image: url(../images/backtotop.png);
-background-repeat: no-repeat;
-height: 67px;
-width: 137px;
-margin: 12% 0% 0% 40%;
-
+ text-align: center;
+ text-align: center;
+ line-height: 18px;
+ padding: 5% 0% 5% 0%;
+ font-size: 15px;
+ color: gray;
 }
 
+.button_back_to_top:hover {
+color: red;
+}
 /*
     потуги должны увенчаться успехом ))
     цыферки хочу.
@@ -293,7 +310,6 @@ margin: 12% 0% 0% 40%;
 
 .footer {
   width: 1440px;
-  height: 613px;
   margin: 0 auto;
 }
 /*
